@@ -20,7 +20,11 @@ struct LoginViewModel: ILoginViewModel {
     var onCompleted: Infallible<Void> {
         self._onCompleted.asInfallible()
     }
-
+    
+    var authorizationURL: URL {
+            return URL(string: "https://github.com/login/device")!
+        }
+    
     func transform(viewDidAppear: Signal<Void>) -> LoginScreenOutput {
 
         let deviceCode = viewDidAppear

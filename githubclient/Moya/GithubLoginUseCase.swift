@@ -32,6 +32,22 @@ struct GithubLoginUseCase: IGithubLoginUseCase {
         return self.provider.rx.request(.oauthAccessToken(clientId: clientId, deviceCode: deviceCode, grantType: grantType))
             .map(AccessTokenModel.self)
     }
+    
+    func getAuthorizationURL(clientId: String, scopes: [String]) -> Single<URL> {
+            return self.deviceCode(clientId: clientId, scopes: scopes)
+                .map { deviceCodeModel in
+                    
+                    let authorizationURL = deviceCodeModel.verificationUri
+                    return authorizationURL
+                }
+        }
+    
+    func getDeviceCode(clientId: String, scopes: [String]) -> Single<String> {
+            return self.deviceCode(clientId: clientId, scopes: scopes)
+                .map { deviceCodeModel in
+                    return deviceCodeModel.deviceCode
+                }
+        }
 }
 
 enum GithubLoginService: TargetType {

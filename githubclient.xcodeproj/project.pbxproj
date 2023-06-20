@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E33C08E12A40C552004E2DA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C08E02A40C552004E2DA1 /* MainViewController.swift */; };
+		E33C08E32A40C58B004E2DA1 /* MyRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C08E22A40C58B004E2DA1 /* MyRepositoriesViewController.swift */; };
+		E33C08E52A40C5A6004E2DA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C08E42A40C5A6004E2DA1 /* ProfileViewController.swift */; };
 		E3921C332A26154700ACB9D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3921C322A26154700ACB9D9 /* AppDelegate.swift */; };
 		E3921C3C2A26154900ACB9D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3921C3B2A26154900ACB9D9 /* Assets.xcassets */; };
 		E3921C3F2A26154900ACB9D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3921C3D2A26154900ACB9D9 /* LaunchScreen.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E33C08E02A40C552004E2DA1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E33C08E22A40C58B004E2DA1 /* MyRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesViewController.swift; sourceTree = "<group>"; };
+		E33C08E42A40C5A6004E2DA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E3921C2F2A26154700ACB9D9 /* githubclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3921C322A26154700ACB9D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3921C3B2A26154900ACB9D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +197,9 @@
 		E3921C682A261F0E00ACB9D9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E33C08E02A40C552004E2DA1 /* MainViewController.swift */,
+				E33C08E22A40C58B004E2DA1 /* MyRepositoriesViewController.swift */,
+				E33C08E42A40C5A6004E2DA1 /* ProfileViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -292,6 +301,7 @@
 				E3921C6E2A27507700ACB9D9 /* ISplashScreen.swift in Sources */,
 				E3921C7E2A27592C00ACB9D9 /* GithubLoginUseCase.swift in Sources */,
 				E3921C782A27565400ACB9D9 /* LoginViewController.swift in Sources */,
+				E33C08E12A40C552004E2DA1 /* MainViewController.swift in Sources */,
 				E3921C5C2A261A9400ACB9D9 /* Dependencies.swift in Sources */,
 				E3921C622A261B3600ACB9D9 /* AppFlow.swift in Sources */,
 				E3921C822A27655500ACB9D9 /* LocalStorageUseCase.swift in Sources */,
@@ -300,9 +310,11 @@
 				E3921C662A261C5C00ACB9D9 /* SplashFlow.swift in Sources */,
 				E3921C6A2A27502C00ACB9D9 /* SplashViewController.swift in Sources */,
 				E3921C702A2753DD00ACB9D9 /* ILocalStorageUseCase.swift in Sources */,
+				E33C08E32A40C58B004E2DA1 /* MyRepositoriesViewController.swift in Sources */,
 				E3921C762A27564D00ACB9D9 /* LoginViewModel.swift in Sources */,
 				E3921C7C2A27582700ACB9D9 /* DeviceCodeModel.swift in Sources */,
 				E3921C602A261B2D00ACB9D9 /* LoginFlow.swift in Sources */,
+				E33C08E52A40C5A6004E2DA1 /* ProfileViewController.swift in Sources */,
 				E3921C6C2A27504E00ACB9D9 /* SplashViewModel.swift in Sources */,
 				E3921C742A27564600ACB9D9 /* ILoginScreen.swift in Sources */,
 			);

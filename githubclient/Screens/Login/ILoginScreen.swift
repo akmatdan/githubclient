@@ -14,6 +14,7 @@ import RxSwift
 protocol ILoginScreen: AnyObject {
 
     var viewModel: ILoginViewModel! { get set }
+    var authorizationURL: URL { get }
 }
 
 struct LoginScreenOutput {
@@ -25,6 +26,7 @@ struct LoginScreenOutput {
 protocol ILoginViewModel {
 
     var onCompleted: Infallible<Void> { get }
+    var authorizationURL: URL { get }
 
     func transform(viewDidAppear: Signal<Void>) -> LoginScreenOutput
 }

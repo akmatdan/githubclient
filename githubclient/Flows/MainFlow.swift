@@ -15,6 +15,11 @@ struct MainFlow {
     weak var window: UIWindow!
 
     func run() -> Infallible<Void> {
-        fatalError()
+        return .deferred {
+            let splash = Resolver.resolve(ILoginScreen.self) as! UIViewController & ILoginScreen
+            self.window.rootViewController = splash
+            return splash.viewModel.onCompleted
+        }
     }
 }
+
